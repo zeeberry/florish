@@ -1,0 +1,16 @@
+.Button-input-primary {
+  background: green;
+  color: white;
+  padding: 1em 1.4em;
+  border: none;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.8em 1.2em;
+  width: 18em;
+  
+}

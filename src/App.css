@@ -1,0 +1,24 @@
+.App {
+  padding: 2em;
+}
+
+.App-logo {
+  height: 1.7em;
+}
+
+.App-main {
+  /*font-size: calc(10px + 2vmin);*/
+}
+
+
+.App-header {
+}
+
+.App-footer {
+  font-size: calc(10px + 1vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
