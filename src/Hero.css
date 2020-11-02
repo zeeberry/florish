@@ -1,8 +1,3 @@
-.Hero {
-  display: flex;
-  justify-content: center;
-}
-
 .Hero-title {
   font-size: 42px;
   margin-top: 0;
@@ -23,10 +18,15 @@
 }
 
 .Hero-section-left {
+  grid-column: 1 / 7;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 3em;
+}
+
+.Hero-section-right {
+  grid-column: 7 / 13;
 }
 
 .Hero-image {

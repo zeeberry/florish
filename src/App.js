@@ -12,6 +12,7 @@ function App() {
       </header>
       <main className='App-main'>
         <Hero />
+        <p>By your side with every interview step</p>
         <Features />
       </main>
       <footer className='App-footer'>© 2020 Florish</footer>

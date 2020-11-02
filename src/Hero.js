@@ -5,7 +5,7 @@ import './Shared.css';
 
 function Hero() {
   return (
-    <section className='Hero'>
+    <>
       <div className='Hero-section-left'>
         <h1 className='Hero-title'>Grow your potential</h1>
         <p className='Hero-paragraph'>Own the interview process—and get the job that’s right for you.</p>
@@ -21,7 +21,7 @@ function Hero() {
       <div className='Hero-section-right'>
         <img className='Hero-image' src={heroImage} alt="laptop and plants"/>
       </div>
-    </section>
+    </>
   );
 }
 
