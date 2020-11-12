@@ -1,23 +1,38 @@
 import React from 'react';
 import './Features.css';
+import featureImage1 from './images/feature1.png';
+import featureImage2 from './images/feature2.png';
+import featureImage3 from './images/feature3.png';
 
 function Features() {
   return (
     <>
-      <div className='feature-1'>
-        <img alt='someimage'/>
-        <p>Personalized guidance</p>
-        <p>Understand what to expect in the interview process—and how to ask the right questions.</p>
+      <div className='feature feature-1'>
+        <div className='feature-content'>
+          <figure>
+            <img className='feature-image' src={featureImage1} alt=""/>
+          </figure>
+          <p className='feature-title'>Personalized guidance</p>
+          <p className='feature-description'>Understand what to expect in the interview process—and how to ask the right questions.</p>
+        </div>
       </div>
-      <div className='feature-2'>
-        <img alt='someimage'/>
-        <p>One-on-one mentorship</p>
-        <p>Learn how to approach your interviews with confidence.</p>
+      <div className='feature feature-2'>
+        <div className='feature-content'>
+          <figure>
+            <img className='feature-image' src={featureImage2} alt=""/>
+          </figure>
+          <p className='feature-title'>One-on-one mentorship</p>
+          <p className='feature-description'>Learn how to approach your interviews with confidence.</p>
+        </div>
       </div>
-      <div className='feature-3'>
-        <img alt='someimage'/>
-        <p>Structured reflection</p>
-        <p>Decide if the company, role, or offer is right for you.</p>
+      <div className='feature feature-3'>
+        <div className='feature-content'>
+          <figure>
+            <img className='feature-image' src={featureImage3} alt=""/>
+          </figure>
+          <p className='feature-title'>Structured reflection</p>
+          <p className='feature-description'>Decide if the company, role, or offer is right for you.</p>
+        </div>
       </div>
     </>
   );

@@ -11,6 +11,7 @@
 .Hero-email-section-title {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 2em;
 }
 
 .Hero-email-section-label {
@@ -22,15 +23,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 3em;
 }
 
 .Hero-section-right {
   grid-column: 7 / 13;
+  display: flex;
+  justify-content: center;
 }
 
 .Hero-image {
-  width: 20em;
+  width: auto;
+  max-height: 450px;
 }
 
 

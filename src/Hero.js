@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from './hero.png';
+import heroImage from './images/hero.png';
 import './Hero.css';
 import './Shared.css';
 
