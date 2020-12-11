@@ -32,6 +32,7 @@ function FeatureList() {
 
   const featureList = content.map((item)=> 
     <Feature 
+        key={item.title}
         image={item.image} 
         alt={item.alt}
         title={item.title}
