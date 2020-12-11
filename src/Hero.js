@@ -1,27 +1,53 @@
 import React from 'react';
 import heroImage from './images/hero.png';
-import './Hero.css';
-import './Shared.css';
+import styled from 'styled-components';
+import EmailForm from './EmailForm';
+
+const Section = styled.section`
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+`;
+
+const Title = styled.h1`
+  font-size: 42px;
+  margin-top: 0;
+`;
+
+const Paragraph = styled.p`
+  font-size: 18px;
+  margin-top: 0;
+`;
+
+const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const Right = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const Image = styled.img`
+ width: auto;
+  max-height: 600px;
+`;
 
 function Hero() {
   return (
-    <>
-      <div className='Hero-section-left'>
-        <h1 className='Hero-title'>Grow your potential</h1>
-        <p className='Hero-paragraph'>Own the interview process—and get the job that’s right for you.</p>
-        <section className='Hero-email-section'>
-          <h3 className='Hero-email-section-title'>Get Early Access</h3>
-          <label className='Hero-email-section-label'>Enter Email Address</label>
-          <div>
-            <input type='email' placeholder='Email Address'/>
-            <button className='Button-input-primary'>Submit</button>
-          </div>
-        </section>
-      </div>
-      <div className='Hero-section-right'>
-        <img className='Hero-image' src={heroImage} alt="laptop and plants"/>
-      </div>
-    </>
+    <Section>
+      <Left>
+        <Title>Grow your potential</Title>
+        <Paragraph>
+          Own the interview process—and get the job that’s right for you.
+        </Paragraph>
+        <EmailForm />
+      </Left>
+      <Right>
+        <Image src={heroImage} alt="laptop and plants"/>
+      </Right>
+    </Section>
   );
 }
 
