@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Feature from './Feature';
+import { BaseSection } from './Shared';
 import featureImage1 from './images/feature1.png';
 import featureImage2 from './images/feature2.png';
 import featureImage3 from './images/feature3.png';
 
-const Section = styled.section`
+const Section = styled(BaseSection)`
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: space-between;
+  margin: 7rem 0 9rem;
 `;
 
 function FeatureList() {

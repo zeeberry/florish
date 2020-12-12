@@ -1,13 +1,23 @@
 import styled from 'styled-components';
+import theme from './Theme';
 
 export const Button = styled.button`
-  background: #ef600e;
+  background: ${theme.orange.base};
   color: white;
+  cursor: pointer;
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
+  
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: ${theme.orange.light}
+  }
 `;
 
 export const Input = styled.input`
@@ -24,7 +34,9 @@ export const Input = styled.input`
 `;
 
 export const Label = styled.label`
-  font-size: 14px;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 0.3em;
 `;
 
 export const Header1 = styled.h1`
@@ -36,3 +48,11 @@ export const Header2 = styled.h2`
   font-weight: 500;
 `;
 
+export const BaseSection = styled.section`
+  max-width: 1280px;
+  width: 100%;
+`;
+
+export const WideSection = styled.section`
+  width: 100%;
+`;

@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from './Theme';
+import { WideSection } from './Shared';
 
-const Section = styled.section`
+const Section = styled(WideSection)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,10 +14,13 @@ const Section = styled.section`
 
 const Title = styled.h2`
   margin-bottom: 0;
+  font-weight: 600;
+  font-size: ${theme.h3};
 `;
 
 const Paragraph = styled.p`
   margin-bottom: 25px;
+  font-size: ${theme.p};
 `;
 
 

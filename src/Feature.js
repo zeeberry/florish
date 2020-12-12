@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from './Theme';
 
 const Card = styled.div`
   display: flex;
@@ -13,16 +14,17 @@ const Image = styled.img`
   margin-bottom: 20px;
 `;
 
-const Title = styled.p`
+const Title = styled.h4`
   font-weight: 500;
-  font-size: 24px;
+  font-size: ${theme.h4};
   margin-bottom: 14px;
   text-align: center;
 `;
 
 const Description = styled.p`
   margin-top: 0;
-  line-height: 24px;
+  font-size: ${theme.p};
+  line-height: 1.5em;
   text-align: center;
 `;
 

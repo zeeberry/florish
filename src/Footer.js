@@ -5,10 +5,10 @@ import theme from './Theme';
 const FooterWrapper = styled.footer`
   border-top: 1px solid #c7eedf;
   padding: 15px;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   color: #999999;
+  font-size: 14px;
 `;
 
 const Heart = styled.span`

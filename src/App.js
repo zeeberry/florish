@@ -11,17 +11,23 @@ const AppWrapper = styled.div`
   box-sizing: border-box;
 `;
 
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 
 function App() {
   return (
     <AppWrapper>
       <Header />
-      <main>
+      <Main>
         <Hero />
         <Description />
         <FeatureList />
         <Callout />
-      </main>
+      </Main>
       <Footer />
   </AppWrapper>
   );

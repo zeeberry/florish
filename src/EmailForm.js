@@ -1,15 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Label, Input, Button } from './Shared';
+
+const Section = styled.section`
+  margin: 1em 0;
+`;
 
 function EmailForm() {
   return (
-    <section>
-      <Label>Enter Email Address</Label>
+    <Section>
+      <Label htmlFor='emailInput'>Enter Email Address</Label>
       <div>
-        <Input type='email' placeholder='Email Address'/>
+        <Input type='email' id='emailInput' placeholder='Email Address'/>
         <Button>Submit</Button>
       </div>
-    </section>
+    </Section>
   );
 }
 

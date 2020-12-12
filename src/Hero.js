@@ -1,9 +1,12 @@
 import React from 'react';
 import heroImage from './images/hero.png';
 import styled from 'styled-components';
+import { BaseSection } from './Shared';
 import EmailForm from './EmailForm';
 
-const Section = styled.section`
+const Section = styled(BaseSection)`
+  display: flex;
+  justify-content: space-between;
   margin-top: 2.5rem;
   margin-bottom: 5rem;
 `;
