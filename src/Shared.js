@@ -26,6 +26,11 @@ export const Input = styled.input`
   border: 1px solid;
   margin-right: 15px;
 
+  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
   &:focus {
     outline-color: #3B815E;
     outline-offset: 1px;

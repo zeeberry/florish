@@ -3,12 +3,16 @@ import heroImage from './images/hero.png';
 import styled from 'styled-components';
 import { BaseSection } from './Shared';
 import EmailForm from './EmailForm';
+import theme from './Theme';
 
 const Section = styled(BaseSection)`
   display: flex;
   justify-content: space-between;
   margin-top: 2.5rem;
   margin-bottom: 5rem;
+  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Title = styled.h1`
@@ -33,8 +37,11 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
- width: auto;
+  width: auto;
   max-height: 600px;
+  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+    width: 100%;
+  }
 `;
 
 function Hero() {

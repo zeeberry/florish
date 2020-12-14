@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from './Theme';
 import Feature from './Feature';
 import { BaseSection } from './Shared';
 import featureImage1 from './images/feature1.png';
@@ -10,6 +11,11 @@ const Section = styled(BaseSection)`
   display: flex;
   justify-content: space-between;
   margin: 7rem 0 9rem;
+  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 15px;
+  }
 `;
 
 function FeatureList() {

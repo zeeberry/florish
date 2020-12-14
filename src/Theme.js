@@ -6,7 +6,19 @@ const theme = {
   },
   orange: {
     light: '#f37831',
-    base: '#ef600e',
+    base: '#ef600e'
+  },
+  desktop: {
+    width: '1024px',
+    minWidth: '960px',
+    height: '756px'
+  },
+  tablet: {
+    width: '768px',
+    minWidth: '480px'
+  },
+  mobile: {
+    width: '360px'
   },
   h1: '2.8em',
   h2: '2em',
