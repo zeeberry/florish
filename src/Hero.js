@@ -10,14 +10,24 @@ const Section = styled(BaseSection)`
   justify-content: space-between;
   margin-top: 2.5rem;
   margin-bottom: 5rem;
-  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+  @media only screen and (max-width: ${theme.desktop.minWidth}) {
+    width: 100%;
+    margin-right: 1em;
+  }
+
+  @media only screen and (max-width: ${theme.tablet.width}) {
     flex-direction: column-reverse;
+    align-items: center;
   }
 `;
 
 const Title = styled.h1`
   font-size: 42px;
   margin-top: 0;
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    font-size: 2.2em;
+    text-align: center;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -29,6 +39,14 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 1em;
+  @media only screen and (min-width: ${theme.desktop.minWidth}) {
+    min-width: 500px;
+  }
+
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    margin-right: 0;
+  }
 `;
 
 const Right = styled.div`
@@ -37,10 +55,10 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  width: auto;
   max-height: 600px;
-  @media only screen and (max-width: ${theme.tablet.minWidth}) {
-    width: 100%;
+  width: 100%;
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    max-width: 400px;
   }
 `;
 

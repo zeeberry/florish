@@ -10,6 +10,9 @@ export const Button = styled.button`
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
+  @media only screen and (max-width: ${theme.desktop.minWidth}) {
+    width: 100%;
+  }
   
   &:focus {
     outline: none;
@@ -20,15 +23,15 @@ export const Button = styled.button`
   }
 `;
 
-export const Input = styled.input`
+export const BaseInput = styled.input`
   padding: 1em 1.2em;
   width: 24em;
   border: 1px solid;
-  margin-right: 15px;
 
-  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+  @media only screen and (max-width: ${theme.desktop.minWidth}) {
     box-sizing: border-box;
     width: 100%;
+    margin: 0 0 1em 0;
   }
 
   &:focus {
@@ -56,6 +59,8 @@ export const Header2 = styled.h2`
 export const BaseSection = styled.section`
   max-width: 1280px;
   width: 100%;
+  padding: 0 1.5em;
+  box-sizing: border-box;
 `;
 
 export const WideSection = styled.section`

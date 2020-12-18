@@ -7,9 +7,14 @@ const Section = styled(WideSection)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0;
+  padding: 5rem;
   margin: 3rem 0;
   background: #EEFBF5;
+  box-sizing: border-box;
+  text-align: center;
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    padding: 5rem 1.5rem;
+  }
 `;
 
 const Title = styled.h2`

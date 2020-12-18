@@ -2,19 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from './Theme';
 import Feature from './Feature';
-import { BaseSection } from './Shared';
+import {BaseSection } from './Shared';
 import featureImage1 from './images/feature1.png';
 import featureImage2 from './images/feature2.png';
 import featureImage3 from './images/feature3.png';
 
 const Section = styled(BaseSection)`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 7rem 0 9rem;
-  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+  box-sizing: border-box;
+  @media only screen and (max-width: ${theme.tablet.width}) {
     flex-direction: column;
     align-items: center;
-    margin: 5rem 15px;
+    margin: 3rem 15px 5rem;
   }
 `;
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Label, Input, Button } from './Shared';
+import { Label, BaseInput, Button } from './Shared';
 
 const Section = styled.section`
   margin: 1em 0;
+`;
+
+const Input = styled(BaseInput)`
+  margin-right: 15px;
 `;
 
 function EmailForm() {

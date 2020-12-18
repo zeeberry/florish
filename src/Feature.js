@@ -7,10 +7,22 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 300px;
+  @media only screen and (max-width: ${theme.desktop.minWidth}) {
+    width: 100%;
+    margin-right: 1em;
+  }
+
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    margin: 0 0 4em;
+  }
+`;
+
+const Figure = styled.figure`
+  margin: 0;
 `;
 
 const Image = styled.img`
-  height: 200px;
+  max-height: 200px;
   margin-bottom: 20px;
 `;
 
@@ -31,9 +43,9 @@ const Description = styled.p`
 function Feature({ image, alt,  title, description }) {
   return (
     <Card>
-      <figure>
+      <Figure>
         <Image src={image} alt={alt}/>
-      </figure>
+      </Figure>
       <Title>{title}</Title>
       <Description>{description}</Description>
     </Card>
