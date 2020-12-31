@@ -10,11 +10,6 @@ const Section = styled(BaseSection)`
   justify-content: space-between;
   margin-top: 2.5rem;
   margin-bottom: 5rem;
-  @media only screen and (max-width: ${theme.desktop.minWidth}) {
-    width: 100%;
-    margin-right: 1em;
-  }
-
   @media only screen and (max-width: ${theme.tablet.width}) {
     flex-direction: column-reverse;
     align-items: center;
@@ -70,7 +65,7 @@ function Hero() {
         <Paragraph>
           Own the interview process—and get the job that’s right for you.
         </Paragraph>
-        <EmailForm />
+        <EmailForm name='heroEmailForm' />
       </Left>
       <Right>
         <Image src={heroImage} alt="laptop and plants"/>
