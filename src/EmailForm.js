@@ -81,8 +81,7 @@ function EmailForm({name}) {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': name, 'email': email })
       })
-        .then(handleSuccess)
-        .catch(error => alert(error));
+        .then(handleSuccess);
     }
 
     e.preventDefault();
