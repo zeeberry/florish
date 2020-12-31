@@ -49,7 +49,7 @@ const Button = styled(BaseButton)`
   }
 `;
 
-function EmailForm({name}) {
+function EmailForm({name, dark}) {
   
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -87,11 +87,9 @@ function EmailForm({name}) {
     e.preventDefault();
   };
 
-  const isDark = () => name === 'dark' ? true : false;
-
   return (
     <Form name={name} onSubmit={handleSubmit}>
-      <Label htmlFor='emailInput' dark={isDark()}>Enter Email Address</Label>
+      <Label htmlFor='emailInput' dark={dark}>Enter Email Address</Label>
       <Fieldset>
         <InputGroup>
           <Input type='email'
@@ -100,7 +98,7 @@ function EmailForm({name}) {
                  value={email} 
                  placeholder='Email Address' 
                  onChange={handleChange}
-                 dark={isDark()} />
+                 dark={dark} />
           {message && <Message aria-live='polite' role='status'>{message}</Message>}
         </InputGroup>
         <Button type='submit'>Submit</Button>
