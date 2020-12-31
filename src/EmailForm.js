@@ -28,7 +28,7 @@ function EmailForm({name}) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', 'email': email })
+        body: encode({ 'form-name': name, 'email': email })
       })
         .then(() => alert('Success!'))
         .catch(error => alert(error));
