@@ -4,28 +4,31 @@ import theme from './Theme';
 import { WideSection } from './Shared';
 
 const Section = styled(WideSection)`
+  align-items: center;
+  background: ${theme.green.base};
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 5rem;
   margin: 3rem 0;
-  background: #EEFBF5;
-  box-sizing: border-box;
+  padding: 5rem;
   text-align: center;
+
   @media only screen and (max-width: ${theme.tablet.width}) {
     padding: 5rem 1.5rem;
   }
 `;
 
 const Title = styled.h2`
-  margin-bottom: 0;
-  font-weight: 600;
+  color: ${theme.white};
   font-size: ${theme.h3};
+  font-weight: 600;
+  margin-bottom: 0;
 `;
 
 const Paragraph = styled.p`
-  margin-bottom: 25px;
+  color: ${theme.white};
   font-size: ${theme.p};
+  margin-bottom: 25px;
 `;
 
 

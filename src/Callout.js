@@ -5,7 +5,7 @@ import theme from './Theme';
 import { WideSection } from './Shared';
 
 const Section = styled(WideSection)`
-  background: ${theme.green.lightest};
+  background: ${theme.green.base};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,7 @@ const Section = styled(WideSection)`
 `;
 
 const Title = styled.h3`
+  color: ${theme.white};
   font-size: ${theme.h3};
   font-weight: 600;
   margin-bottom: 0;
@@ -24,6 +25,7 @@ const Title = styled.h3`
 `;
 
 const Paragraph = styled.p`
+  color: ${theme.white};
   font-size: ${theme.p};
 `;
 
@@ -37,7 +39,7 @@ function Callout() {
       <Content>
         <Title>Grow your potential</Title>
         <Paragraph>Own the interview process—and get the job that’s right for you.</Paragraph>
-        <EmailForm name='calloutEmailForm' />
+        <EmailForm name='dark' />
       </Content>
     </Section>
   );

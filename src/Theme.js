@@ -2,12 +2,16 @@ const theme = {
   red: '#ff4e4e',
   green: {
     lightest: '#EEFBF5',
-    light: '#c7eedf'
+    lighter: '#def7ec',
+    base: '#139757',
+    darkest: '#175E3B',
+
   },
   orange: {
     light: '#f37831',
     base: '#ef600e'
   },
+  white: '#fff',
   desktop: {
     width: '1024px',
     minWidth: '960px',
