@@ -21,7 +21,7 @@ const Section = styled.div`
   align-items: center;
   color: ${theme.green.base};
   display: flex;
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', cursive !important;
   font-size: 1.6em;
 `;
 

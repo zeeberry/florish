@@ -9,6 +9,10 @@ import styled from 'styled-components';
 
 const AppWrapper = styled.div`
   box-sizing: border-box;
+
+  * {
+    font-family: 'Raleway', sans-serif;
+  }
 `;
 
 const Main = styled.main`
@@ -29,7 +33,7 @@ function App() {
         <Callout />
       </Main>
       <Footer />
-  </AppWrapper>
+    </AppWrapper>
   );
 }
 
