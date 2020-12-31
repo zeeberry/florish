@@ -65,11 +65,11 @@ function EmailForm({name, dark}) {
   };
 
   const handleSuccess = () => {
-    setMessage('Thank you!');
+    setMessage('Sweet! You are on the waitlist.');
 
     setTimeout(() => {
       setMessage('');
-    }, 2000);
+    }, 5000);
 
     setEmail('');
   };
@@ -101,7 +101,7 @@ function EmailForm({name, dark}) {
                  dark={dark} />
           {message && <Message aria-live='polite' role='status'>{message}</Message>}
         </InputGroup>
-        <Button type='submit'>Submit</Button>
+        <Button type='submit'>Join Waitlist</Button>
       </Fieldset>
     </Form>
   );

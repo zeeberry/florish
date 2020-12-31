@@ -65,6 +65,9 @@ function Hero() {
         <Paragraph>
           Own the interview process—and get the job that’s right for you.
         </Paragraph>
+        <Paragraph>
+          Sign up for our private beta.
+        </Paragraph>
         <EmailForm name='heroEmailForm' />
       </Left>
       <Right>

@@ -39,6 +39,9 @@ function Callout() {
       <Content>
         <Title>Grow your potential</Title>
         <Paragraph>Own the interview process—and get the job that’s right for you.</Paragraph>
+        <Paragraph>
+          Sign up for our private beta.
+        </Paragraph>
         <EmailForm name='calloutEmailForm' dark/>
       </Content>
     </Section>

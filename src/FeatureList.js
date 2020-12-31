@@ -24,7 +24,7 @@ function FeatureList() {
     {
       image: featureImage1,
       title: 'Personalized guidance',
-      description: 'Understand what to expect   in the interview pr  ocess—and how to ask the right questions.'
+      description: 'Understand what to expect in the interview process—and how to ask the right questions.'
     },
     {
       image: featureImage2,
