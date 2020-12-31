@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/logo.svg';
+import theme from './Theme';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
@@ -18,27 +18,19 @@ const Navigation = styled.nav`
 `;
 
 const Section = styled.div`
-  display: flex;
   align-items: center;
+  color: ${theme.green.base};
+  display: flex;
+  font-family: 'Monoton', cursive;
+  font-size: 1.6em;
 `;
-
-const Logo = styled.img`
- height: 34px;
-  width: 34px;
-  margin-right: 5px;
-`;
-
 
 function Header() {
   return (
     <HeaderWrapper>
       <Navigation>
         <Section>
-          <Logo src={logo} alt='logo' />
           Florish
-        </Section>
-        <Section>
-          <div>About Us</div>
         </Section>
       </Navigation>
     </HeaderWrapper>
