@@ -65,7 +65,7 @@ function EmailForm({name, dark}) {
   };
 
   const handleSuccess = () => {
-    setMessage('Sweet! You are on the waitlist.');
+    setMessage('Success! You are now on the waitlist.');
 
     setTimeout(() => {
       setMessage('');
