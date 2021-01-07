@@ -13,16 +13,16 @@ const theme = {
   },
   white: '#fff',
   desktop: {
-    width: '1024px',
-    minWidth: '960px',
-    height: '756px'
+    width: '64em',
+    minWidth: '60em',
+    height: '47.25em'
   },
   tablet: {
-    width: '768px',
-    minWidth: '480px'
+    width: '48em',
+    minWidth: '30em'
   },
   mobile: {
-    width: '360px'
+    width: '22.5em'
   },
   h1: '2.8em',
   h2: '2em',

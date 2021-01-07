@@ -14,6 +14,11 @@ const Section = styled(BaseSection)`
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    margin-top: 1rem;
+  }
+
 `;
 
 const Title = styled.h1`
