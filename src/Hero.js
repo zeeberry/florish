@@ -55,8 +55,12 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
   height: auto;
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    max-height: 400px;
+  }
 `;
 
 function Hero() {
