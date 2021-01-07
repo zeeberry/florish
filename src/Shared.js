@@ -28,6 +28,10 @@ export const BaseInput = styled.input`
   width: 100%;
   box-sizing: border-box;
   border: 1px solid;
+  appearance: none;
+  @media only screen and (max-width: ${theme.tablet.width}) {
+    font-size: 1em;
+  }
 
   &:focus {
     outline-color: #3B815E;
