@@ -46,6 +46,7 @@ const Button = styled(BaseButton)`
   align-self: baseline;
   @media only screen and (max-width: ${theme.desktop.minWidth}) {
     margin: 1em 0 0;
+    padding: 1.3em;
   }
 `;
 

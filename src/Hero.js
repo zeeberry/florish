@@ -17,11 +17,16 @@ const Section = styled(BaseSection)`
 `;
 
 const Title = styled.h1`
-  font-size: 42px;
+  font-size: 2.6em;
+  font-weight: 900;
   margin-top: 0;
   @media only screen and (max-width: ${theme.tablet.width}) {
     font-size: 2.2em;
     text-align: center;
+  }
+
+  @media only screen and (max-width: ${theme.tablet.minWidth}) {
+    font-size: 2em;
   }
 `;
 
@@ -50,11 +55,8 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  max-height: 600px;
-  width: 100%;
-  @media only screen and (max-width: ${theme.tablet.width}) {
-    max-width: 400px;
-  }
+  max-width: 100%;
+  height: auto;
 `;
 
 function Hero() {

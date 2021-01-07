@@ -27,7 +27,7 @@ const Image = styled.img`
 `;
 
 const Title = styled.h4`
-  font-weight: 500;
+  font-weight: 600;
   font-size: ${theme.h4};
   margin-bottom: 14px;
   text-align: center;
